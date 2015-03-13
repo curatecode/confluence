@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           preserveComments: 'all'
         },
         src: [
-          'src/js/jquery-1.11.2.js',
+          'src/js/jquery.js',
           'src/js/bootstrap.js',
           'src/js/*.js'
         ],

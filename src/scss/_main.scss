@@ -1,0 +1,25 @@
+body {
+
+}
+
+.prime-box {
+	background: url('../img/background.jpg') no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	.box-overlay {
+		height: 100%;
+		width: 100%;
+		background: rgb(43, 173, 255);
+		opacity: .3;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+	.content-wrap {
+		z-index: 1;
+		position: relative;
+	}
+}
