@@ -1,9 +1,11 @@
 body {
-
+	font-family: 'Lato', san-serif;
+	font-weight: 300;
+	font-size: 1.8em;
 }
 
 .prime-box {
-	background: url('../img/background.jpg') no-repeat center center;
+	background: url('../img/background.jpg') no-repeat center bottom;
 	background-size: cover;
 	width: 100%;
 	color: #fff;
@@ -18,8 +20,37 @@ body {
 		left: 0;
 		position: absolute;
 	}
-	.content-wrap {
-		z-index: 1;
-		position: relative;
+}
+.main-header {
+	background: rgba(0,0,0,0.3);
+	z-index: 1;
+	position: relative;
+	padding: 15px 0;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.main-logo {
+		font-size: 24px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	#main-nav {
+		margin: 2px 0;
+		li {
+			margin: 0 0 0 15px;
+			padding: 0;
+			a {
+				display: block;
+				font-size: 13px;
+				padding: 5px 12px;
+				text-transform: capitalize;
+				@include rounded(3px);
+				@include transition(.1s ease-in-out);
+				&:hover {
+					background: rgba(0,0,0,0.4);
+				}
+			}
+		}
 	}
 }
