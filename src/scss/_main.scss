@@ -54,3 +54,50 @@ body {
 		}
 	}
 }
+
+.conf-quote {
+	margin-top: 80px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 100;
+	padding-bottom: 80px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#conf-program {
+	margin-top: 80px;
+	.cards {
+		.head {
+			margin: auto;
+			height: 150px;
+			width: 150px;
+			line-height: 150px;
+			text-align: center;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+			@include rounded(100%);
+		}
+		&.space {
+			.head {
+				background: #6EC5FA;
+			}
+		}
+		&.growth {
+			.head {
+				background: #FF7070;
+			}
+		}
+		&.comm {
+			.head {
+				background: #FFE873;
+			}
+		}
+		.body {
+			margin: 20px 40px 0;
+			text-align: center;
+			font-size: 16px;
+		}
+	}
+}
