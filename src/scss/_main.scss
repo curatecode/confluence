@@ -1,7 +1,8 @@
 body {
 	font-family: 'Lato', san-serif;
 	font-weight: 300;
-	font-size: 1.8em;
+	font-size: 1.4em;
+	-webkit-font-smoothing: antialiased;
 }
 
 .prime-box {
@@ -32,7 +33,7 @@ body {
 	}
 	.main-logo {
 		font-size: 24px;
-		font-weight: 500;
+		font-weight: 700;
 		text-transform: uppercase;
 	}
 	#main-nav {
@@ -44,6 +45,7 @@ body {
 				display: block;
 				font-size: 13px;
 				padding: 5px 12px;
+				font-weight: 500;
 				text-transform: capitalize;
 				@include rounded(3px);
 				@include transition(.1s ease-in-out);
@@ -59,7 +61,7 @@ body {
 	margin-top: 80px;
 	text-align: center;
 	font-size: 24px;
-	font-weight: 100;
+	font-weight: 400;
 	padding-bottom: 80px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
