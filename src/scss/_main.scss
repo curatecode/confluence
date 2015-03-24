@@ -7,7 +7,7 @@ body {
 
 .headline {
 	text-align: center;
-	margin: 0 auto 70px;
+	margin: 0 auto 80px;
 	text-transform: uppercase;
 	font-weight: 300;
 }
@@ -65,16 +65,17 @@ body {
 	}
 }
 
-.conf-quote {
-	margin-top: 80px;
+#conf-quote {
+	padding: 80px 0;
 	text-align: center;
 	font-size: 24px;
 	font-weight: 400;
-	padding-bottom: 80px;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 #conf-program {
+	background: #F3FAFF;
+	border-top: 1px dashed #92B5CD;
+	border-bottom: 1px dashed #92B5CD;
 	padding: 80px 0;
 	.cards {
 		.head {
@@ -129,9 +130,12 @@ body {
 }
 
 #conf-contact {
-	background: #EAF1F9;
-	padding: 30px 0;
-	border-top: 1px dashed #C8DDF5;
+	padding: 80px 0;
+}
+
+#conf-footer {
+	padding: 15px 0;
+	font-size: .8em;
 }
 
 blockquote {
@@ -155,4 +159,15 @@ blockquote:after {
   line-height: 0.1em;
   margin-left: 0.25em;
   vertical-align: -0.7em;
+}
+
+@-webkit-keyframes pulse {
+  0% { -webkit-transform: scale3d(1, 1, 1); }
+  25% { -webkit-transform: scale3d(1.2, 1.2, 1.2); }
+  50% { -webkit-transform: scale3d(1, 1, 1); }
+  75% { -webkit-transform: scale3d(1.1, 1.1, 1.1); }
+	100% { -webkit-transform: scale3d(1, 1, 1); }
+}
+.pulse {
+  -webkit-animation: pulse .5s;
 }

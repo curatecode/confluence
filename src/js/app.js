@@ -18,6 +18,13 @@ $(function() {
   });
 });
 
+$(window).scroll(function() {
+  var prodTop = $('#conf-quote').offset().top;
+  if ($(window).scrollTop() > prodTop) {
+    $('.head').addClass('pulse');
+  }
+});
+
 // $(function() {
 //   var boxOvrly = $('.box-overlay');
 //   var pstlClrs = [
