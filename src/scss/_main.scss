@@ -121,7 +121,11 @@ body {
 			font-size: 18px;
 			font-weight: 600;
 			text-transform: uppercase;
+			@include transition(.07s linear);
 			@include rounded(100%);
+			&:hover {
+				@include transform(scale(1.1));
+			}
 		}
 		&.space {
 			.head {
@@ -195,12 +199,12 @@ blockquote:after {
 }
 
 @-webkit-keyframes pulse {
-  0% { -webkit-transform: scale3d(1, 1, 1); }
-  25% { -webkit-transform: scale3d(1.2, 1.2, 1.2); }
-  50% { -webkit-transform: scale3d(1, 1, 1); }
-  75% { -webkit-transform: scale3d(1.1, 1.1, 1.1); }
-	100% { -webkit-transform: scale3d(1, 1, 1); }
+  0% { @include transform(scale(1)); }
+  25% { @include transform(scale(1.2)); }
+  50% { @include transform(scale(1)); }
+  75% { @include transform(scale(1.1)); }
+	100% { @include transform(scale(1)); }
 }
 .pulse {
-  -webkit-animation: pulse .5s;
+  @include animation(pulse .5s);
 }
