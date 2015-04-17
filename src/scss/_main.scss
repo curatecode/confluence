@@ -34,7 +34,7 @@ body {
 	background: rgba(255,255,255,0.7);
 	z-index: 1;
 	position: relative;
-	padding: 15px 0;
+	padding: 5px 0;
 	@include box-shadow(0,1px,2px,rgba(0, 0, 0, 0.15));
 	@include transition(.2s ease-in-out);
 	&.is-scrolled {
@@ -55,13 +55,17 @@ body {
 		color: #666;
 		text-decoration: none;
 	}
-	.main-logo {
-		font-size: 24px;
-		font-weight: 700;
-		text-transform: uppercase;
+	.main-logo a {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background: url('../img/logo.png') no-repeat 0 0;
+		height: 54px;
+		width: 188px;
+		display: block;
 	}
 	#main-nav {
-		margin: 2px 0;
+		margin: 13px 0;
 		li {
 			margin: 0 0 0 15px;
 			padding: 0;
