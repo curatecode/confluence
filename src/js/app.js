@@ -19,9 +19,20 @@ $(function() {
 });
 
 $(window).scroll(function() {
+  var winTop = $('body').offset().top;
   var prodTop = $('#conf-quote').offset().top;
+  if ($(window).scrollTop() > ($('.main-header').height())) {
+    $('.main-header').addClass('is-scrolled');
+  }
+  else {
+    $('.main-header').removeClass('is-scrolled');
+  };
   if ($(window).scrollTop() > prodTop) {
+    $('.main-header').addClass('is-fixed');
     $('.head').addClass('pulse');
+  }
+  else {
+    $('.main-header').removeClass('is-fixed');
   }
 });
 
