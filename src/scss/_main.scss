@@ -6,6 +6,7 @@ body {
 }
 
 .headline {
+	font-family: 'Oswald', san-serif;
 	text-align: center;
 	margin: 0 auto 80px;
 	text-transform: uppercase;
@@ -23,7 +24,7 @@ body {
 		height: 100%;
 		width: 100%;
 		background: #704214;
-		opacity: .3;
+		opacity: .4;
 		top: 0;
 		left: 0;
 		position: absolute;
@@ -82,6 +83,20 @@ body {
 			}
 		}
 	}
+}
+.hero-headline {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	z-index: 11;
+	@include transform(translate(-50%,-50%));
+	h1 {
+		margin: 0;
+		font: 400 3em/1.4em 'Oswald', san-serif;
+	}
+
 }
 
 #conf-quote {
