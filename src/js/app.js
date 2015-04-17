@@ -19,7 +19,7 @@ $(function() {
 });
 
 $(window).scroll(function() {
-  var isFixed = $('#conf-quote').offset().top;
+  var isFixed = $('.fix-menunav').offset().top;
   var setPulse = $('#conf-program').offset().top;
   if ($(window).scrollTop() > ($('.main-header').height())) {
     $('.main-header').addClass('is-scrolled');
