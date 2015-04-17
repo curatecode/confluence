@@ -138,12 +138,14 @@ body {
 			margin: auto;
 			height: 150px;
 			width: 150px;
-			line-height: 150px;
+			line-height: 130px;
 			text-align: center;
 			color: #fff;
 			font-size: 18px;
 			font-weight: 600;
 			text-transform: uppercase;
+			border-width: 10px;
+			border-style: solid;
 			@include transition(.07s linear);
 			@include rounded(100%);
 			&:hover {
@@ -153,16 +155,19 @@ body {
 		&.space {
 			.head {
 				background: #6EC5FA;
+				border-color: #DBF1FF;
 			}
 		}
 		&.growth {
 			.head {
 				background: #FF7070;
+				border-color: #F9E5E5;
 			}
 		}
 		&.comm {
 			.head {
 				background: #FFE873;
+				border-color: #FDF5CD;
 			}
 		}
 		.body {
