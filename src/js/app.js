@@ -34,7 +34,7 @@ $(window).scroll(function() {
   else {
     $('.main-header').removeClass('is-fixed');
   };
-  if ($(window).scrollTop() > setPulse) {
+  if ($(window).scrollTop() > (setPulse - 100)) {
     $('.head').each(function(i,el) {
       var $this = $(this);
       setTimeout(function() {
