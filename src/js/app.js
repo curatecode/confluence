@@ -19,21 +19,29 @@ $(function() {
 });
 
 $(window).scroll(function() {
-  var winTop = $('body').offset().top;
-  var prodTop = $('#conf-quote').offset().top;
+  var isFixed = $('#conf-quote').offset().top;
+  var setPulse = $('#conf-program').offset().top;
   if ($(window).scrollTop() > ($('.main-header').height())) {
     $('.main-header').addClass('is-scrolled');
   }
   else {
     $('.main-header').removeClass('is-scrolled');
   };
-  if ($(window).scrollTop() > prodTop) {
+  if ($(window).scrollTop() > isFixed) {
     $('.main-header').addClass('is-fixed');
-    $('.head').addClass('pulse');
+    $('.main-header').removeClass('is-scrolled');
   }
   else {
     $('.main-header').removeClass('is-fixed');
-  }
+  };
+  if ($(window).scrollTop() > setPulse) {
+    $('.head').each(function(i,el) {
+      var $this = $(this);
+      setTimeout(function() {
+        $this.addClass('pulse');
+      }, i*500);
+    });
+  };
 });
 
 // $(function() {
