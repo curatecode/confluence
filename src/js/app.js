@@ -1,5 +1,5 @@
 $(window).load(function() {
-	var winHeight =  $(window).height() * 0.75;
+	var winHeight =  $(window).height() * 0.7;
 	$('.prime-box').css('height', winHeight);
 });
 

@@ -13,7 +13,7 @@ body {
 }
 
 .prime-box {
-	background: url('../img/background.jpg') no-repeat center bottom;
+	background: url('../img/background.jpg') no-repeat 50% 70%;
 	background-size: cover;
 	width: 100%;
 	color: #fff;
@@ -31,7 +31,7 @@ body {
 	}
 }
 .main-header {
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.8);
 	z-index: 1;
 	position: relative;
 	padding: 5px 0;
@@ -42,14 +42,12 @@ body {
 		width: 100%;
 		top: -64px;
 		left: 0;
-		// @include transform(translate(0,-64px));
 	}
 	&.is-fixed {
 		position: fixed;
 		width: 100%;
 		top: 0;
 		left: 0;
-		// @include transform(translate(0,0));
 	}
 	a {
 		color: #666;
@@ -95,8 +93,8 @@ body {
 
 #conf-program {
 	background: #F3FAFF;
-	border-top: 1px dashed #92B5CD;
-	border-bottom: 1px dashed #92B5CD;
+	border-top: 1px solid #E1EEF7;
+	border-bottom: 1px solid #E1EEF7;
 	padding: 80px 0;
 	.cards {
 		.head {
